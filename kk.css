@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(135deg, #111, #222);
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+}
+
+.header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0ff, #0f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes neonGlow {
+    from { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
+    to { text-shadow: 0 0 20px #0f0, 0 0 30px #0f0; }
+}
+
+.content {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.details li {
+    background: rgba(50, 50, 50, 0.8);
+    padding: 12px;
+    margin: 5px 0;
+    border-left: 5px solid #0ff;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.details li:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.image-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    border: 3px solid #0ff;
+    box-shadow: 0 0 15px #0ff;
+}
+
+/* ปุ่มกลับ */
+.back-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff0000, #ff6600);
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    transition: 0.4s;
+}
+
+.back-btn:hover {
+    background: linear-gradient(45deg, #ff6600, #ff0000);
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.9);
+    animation: shake 0.3s ease-in-out infinite alternate;
+}
+
+/* เอฟเฟกต์สั่นเมื่อโฮเวอร์ */
+@keyframes shake {
+    from { transform: translateX(0); }
+    to { transform: translateX(3px); }
+}
+
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #111;
+    font-size: 1rem;
+    box-shadow: 0 -5px 15px rgba(0, 255, 255, 0.2);
+}
